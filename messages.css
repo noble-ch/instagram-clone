@@ -1,0 +1,70 @@
+.messages-container {
+  width: 400px;
+  margin: 0;
+  border: 1px solid var(--tertiary);
+}
+
+.lsidebar p {
+  display: none;
+  /* border: solid green; */
+  margin: 0;
+}
+
+.lside-container {
+  margin-right: 0px;
+  width: 60px;
+}
+.header__buttons--desktop {
+  margin-right: 0px;
+}
+
+.main-container {
+  display: flex;
+}
+
+.content-container {
+  margin: 0px;
+  margin-left: 80px;
+  padding: 0;
+}
+
+.vertical-border {
+  border: none;
+  border-right: 1px solid var(--tertiary);
+  height: 100%;
+}
+
+.messages-info-container {
+  height: 120px;
+  padding: 20px 20px;
+}
+
+.usr-name-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.msg-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.friends-continer{
+	display: flex;
+	align-items: center;
+
+}
+
+.friends-pp{
+	display: flex;
+	width: 60px;
+	border-radius: 100px;
+	margin: 10px 20px;
+}
+.friends-pp img{
+	display: flex;
+	width: 60px;
+	border-radius: 100px;
+}
