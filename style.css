@@ -35,7 +35,6 @@ textarea {
   --text-light: hsl(0, 0%, 60%);
   --text-light-secondary: hsl(0, 0%, 71%);
 
-
   --like: hsl(355, 82%, 61%);
   --link: hsl(204, 100%, 48%);
 
@@ -43,6 +42,7 @@ textarea {
   --nav-height: 44px;
 }
 :root.darkTheme {
+  /* transform: translateX(0) rotate(360deg); */
   --primary: hsl(0, 0%, 0%);
   --secondary: hsl(0, 0%, 10%);
   --tertiary: hsl(0, 0%, 20%);
@@ -119,11 +119,13 @@ img {
 
 .header__home {
   margin-top: 5px;
+  margin-left: 20px;
 }
 .header__theme-button {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  margin: auto 0;
 }
 .header__theme-button-sun {
   display: none;
@@ -822,6 +824,7 @@ img {
   position: fixed;
   color: var(--text-dark);
 }
+
 .lsidebar a {
   color: var(--text-dark);
   /* border: solid red; */
@@ -835,10 +838,16 @@ p {
   color: var(--text-dark);
 }
 .header__buttons--desktop {
+  margin-top: 40px;
   display: block;
   color: var(--text-dark);
 }
 
+.posts {
+  /* border: solid red; */
+  /* width: 30rem; */
+  margin: 0 auto;
+}
 .borders {
   border: solid red;
 }
@@ -922,9 +931,15 @@ b {
     --header-height: 54px;
     --nav-height: 0px;
   }
+  .header {
+    display: none !important;
+  }
+  .main-container {
+    margin-top: 0;
+  }
 
   .header__content {
-    padding: 0 20px;
+    padding: 20px;
   }
 
   .header__search {
