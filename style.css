@@ -225,19 +225,23 @@ img {
 
   margin-top: var(--header-height);
   margin-bottom: var(--nav-height);
-
+  /* border: solid red; */
   display: flex;
   flex: 1;
 }
 
 .content-container {
+  /* border: solid yellow; */
   width: 100%;
-  max-width: 935px;
+  max-width: 665px;
 
   padding: 0 0 8px;
 
   margin: 0 auto;
   display: flex;
+  justify-self: center;
+  padding-top: 0 !important;
+  /* margin-left: 25rem; */
 }
 .content {
   width: 100%;
@@ -824,6 +828,8 @@ img {
 .lsidebar {
   position: fixed;
   color: var(--text-dark);
+  height: 100%;
+  border: 0.5px solid var(--tertiary);
 }
 
 .lsidebar a {
@@ -845,8 +851,6 @@ p {
 }
 
 .posts {
-  /* border: solid red; */
-  /* width: 30rem; */
   margin: 0 auto;
 }
 .borders {
@@ -862,7 +866,7 @@ p {
   display: flex;
   align-items: center;
   font-size: 16px;
-  width: 250px;
+  width: 220px;
   text-decoration: none;
 }
 .svg {
@@ -873,14 +877,20 @@ b {
   color: var(--text-dark);
 }
 /* Media Queries */
+
+/* ------------------mobile phones------------------ */
 @media (max-width: 767px) {
   .header__buttons--desktop {
     display: none;
   }
 
-  /* Fix post medias indicators bugs on mobile */
   .post__medias {
     gap: 1px;
+  }
+  .posts_more_option_popup div {
+    margin-top: 100px !important;
+    width: 80% !important;
+    height: 60% !important;
   }
 }
 @media (min-width: 768px) and (max-width: 1280px) {
@@ -894,7 +904,7 @@ b {
     margin: 0 80px;
   }
 }
-
+/* -----------------ipad Air---------------- */
 @media (min-width: 620px) {
   .content-container {
     padding: 30px 0 24px;
@@ -925,8 +935,13 @@ b {
   .post__date-time {
     margin-top: 6px;
   }
+  .posts_more_option_popup div {
+    margin-top: 100px !important;
+    width: 60% !important;
+    height: 60% !important;
+  }
 }
-
+/* --------------------tablets---------------------------  */
 @media (min-width: 768px) {
   :root {
     --header-height: 54px;
@@ -954,8 +969,14 @@ b {
   .navbar {
     display: none;
   }
+  .posts_more_option_popup div {
+    margin-top: 220px !important;
+    width: 50% !important;
+    height: 60% !important;
+  }
 }
 
+/* ---------------big screens------------ */
 @media (min-width: 1024px) {
   .main-container {
     background-color: var(--primary);
@@ -967,6 +988,7 @@ b {
 
   .side-menu {
     display: flex;
+    /* border: solid green; */
   }
 
   .posts {
@@ -977,18 +999,25 @@ b {
   .stories {
     width: 640px !important;
   }
+  .posts_more_option_popup div {
+    margin-top: 200px !important;
+    width: 35% !important;
+    height: 60% !important;
+  }
 }
 
 .posts_more_option_popup {
   z-index: 12;
-  margin-top: 365px;
+  /* margin-top: 365px; */
+  margin-bottom: -450px;
+  margin-top: -26px;
   position: fixed;
+
   width: 100%;
   height: 100%;
   border: none;
   background: var(--tertiary);
   background: transparent;
-  border-radius: 10px;
   backdrop-filter: brightness(40%);
 }
 @keyframes myAnimation {
@@ -1003,7 +1032,6 @@ b {
   }
 }
 .posts_more_option_popup div {
-  margin-top: 400px;
   margin: auto;
   display: flex;
   flex-flow: column;
@@ -1016,8 +1044,8 @@ b {
   animation: myAnimation 50ms ease-in-out;
 }
 .posts_more_option_popup button {
-  margin: auto;
-  padding: auto;
+  /* margin: auto; */
+  /* padding: auto; */
   width: 96%;
   height: 100%;
   background: var(--tertiary);
