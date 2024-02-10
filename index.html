@@ -617,6 +617,8 @@
             </button>
           </div>
 
+          <!-- ----------------- Post---------------------- -->
+
           <div class="posts">
             <article class="post">
               <div class="post__header">
@@ -636,7 +638,7 @@
                   >
                 </div>
 
-                <button class="post__more-options">
+                <button id="show" class="post__more-options">
                   <svg
                     width="24"
                     height="24"
@@ -659,13 +661,35 @@
                     />
                   </svg>
                 </button>
+                <dialog class="posts_more_option_popup">
+                  <div>
+                    <button class="red">Report</button>
+                    <button class="red">Unfollow</button>
+                    <button>Add to favorites</button>
+                    <button>Go to post</button>
+                    <button>Share to</button>
+                    <button>Copy buttonnk</button>
+                    <button>Embed</button>
+                    <button>About this account</button>
+                    <button id="close">Cancel</button>
+                  </div>
+                </dialog>
+                <script>
+                  var dialog = document.querySelector('dialog');
+                  document.querySelector('#show').onclick = function () {
+                    dialog.show();
+                  };
+                  document.querySelector('#close').onclick = function () {
+                    dialog.close();
+                  };
+                </script>
               </div>
 
               <div class="post__content">
                 <div class="post__medias">
                   <img
                     class="post__media"
-                    src="assets/insta-clone.png"
+                    src="assets/posts/troll.jpg"
                     alt="Post Content"
                   />
                 </div>
@@ -814,19 +838,10 @@
                 <div class="post__medias">
                   <img
                     class="post__media"
-                    src="assets/insta-clone.png"
+                    src="assets/posts/troll.jpg"
                     alt="Post Content"
                   />
-                  <img
-                    class="post__media"
-                    src="assets/insta-clone.png"
-                    alt="Post Content"
-                  />
-                  <img
-                    class="post__media"
-                    src="assets/insta-clone.png"
-                    alt="Post Content"
-                  />
+
                 </div>
               </div>
 
@@ -967,7 +982,7 @@
                 <div class="post__medias">
                   <img
                     class="post__media"
-                    src="assets/insta-clone.png"
+                    src="assets/posts/troll.jpg"
                     alt="Post Content"
                   />
                 </div>
@@ -1110,24 +1125,10 @@
                 <div class="post__medias">
                   <img
                     class="post__media"
-                    src="assets/insta-clone.png"
+                    src="assets/posts/troll.jpg"
                     alt="Post Content"
                   />
-                  <img
-                    class="post__media"
-                    src="assets/insta-clone.png"
-                    alt="Post Content"
-                  />
-                  <img
-                    class="post__media"
-                    src="assets/insta-clone.png"
-                    alt="Post Content"
-                  />
-                  <img
-                    class="post__media"
-                    src="assets/insta-clone.png"
-                    alt="Post Content"
-                  />
+              
                 </div>
               </div>
 
