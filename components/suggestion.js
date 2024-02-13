@@ -25,16 +25,18 @@ suggestedUsers.forEach((user) => {
   suggestionsContainer.appendChild(suggestionElement);
 });
 
-const followButtons = document.getElementsByClassName('side-menu__suggestion-button');
+const followButtons = document.getElementsByClassName(
+  'side-menu__suggestion-button'
+);
 
 for (let i = 0; i < followButtons.length; i++) {
-  followButtons[i].addEventListener('click', function() {
+  followButtons[i].addEventListener('click', function () {
     const suggestionElement = this.closest('.side-menu__suggestion');
 
     const paragraph = suggestionElement.querySelector('t');
 
     paragraph.textContent = 'Following';
-    paragraph.style.color = 'white';
+    paragraph.style.color = 'var(--text-dark)';
 
     this.disabled = true;
   });

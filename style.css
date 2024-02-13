@@ -1041,7 +1041,7 @@ b {
   height: 55%;
   margin-top: 200px;
   border-radius: 10px;
-  animation: myAnimation 50ms ease-in-out;
+  animation: myAnimation 200ms ease-in-out;
 }
 .posts_more_option_popup button {
   /* margin: auto; */
