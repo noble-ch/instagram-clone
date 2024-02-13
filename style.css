@@ -892,6 +892,12 @@ b {
     width: 80% !important;
     height: 60% !important;
   }
+  .ig_name {
+    display: none;
+  }
+  .ig_logo {
+    margin-left: 16px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1280px) {
   .lsidebar {
@@ -902,6 +908,12 @@ b {
   .content-container {
     /* border: solid red; */
     margin: 0 80px;
+  }
+  .ig_name {
+    display: none;
+  }
+  .ig_logo {
+    margin-left: 16px;
   }
 }
 /* -----------------ipad Air---------------- */
@@ -940,6 +952,13 @@ b {
     width: 60% !important;
     height: 60% !important;
   }
+  .ig_name {
+    display: none !important;
+  }
+  .ig_logo {
+    display: block !important;
+    margin-left: 16px !important;
+  }
 }
 /* --------------------tablets---------------------------  */
 @media (min-width: 768px) {
@@ -974,10 +993,45 @@ b {
     width: 50% !important;
     height: 60% !important;
   }
+
+  .ig_name {
+    display: none !important;
+  }
+  .ig_logo {
+    display: block !important;
+    margin-left: 16px !important;
+  }
+}
+
+/* ----------------compact side_bar-------------------- */
+
+@media (min-width: 1280px) {
+  .ig_logo {
+    display: none !important;
+  }
+  .ig_name {
+    display: block !important;
+  }
+  .side-menu {
+    display: flex;
+  }
+  .posts {
+    padding: 0 50px;
+    margin: 0 auto;
+    /* border: solid red; */
+  }
+  .stories {
+    width: 640px !important;
+  }
+  .posts_more_option_popup div {
+    margin-top: 220px !important;
+    width: 30% !important;
+    height: 60% !important;
+  }
 }
 
 /* ---------------big screens------------ */
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
   .main-container {
     background-color: var(--primary);
   }
@@ -988,7 +1042,6 @@ b {
 
   .side-menu {
     display: flex;
-    /* border: solid green; */
   }
 
   .posts {
@@ -1003,6 +1056,12 @@ b {
     margin-top: 200px !important;
     width: 35% !important;
     height: 60% !important;
+  }
+  .ig_logo {
+    display: block !important;
+  }
+  .ig_name {
+    display: none !important;
   }
 }
 
@@ -1035,13 +1094,14 @@ b {
   margin: auto;
   display: flex;
   flex-flow: column;
-  justify-content: space-around;
+  justify-content: space-between;
   background: var(--tertiary);
   width: 27%;
   height: 55%;
   margin-top: 200px;
   border-radius: 10px;
   animation: myAnimation 200ms ease-in-out;
+  padding-left: 1%;
 }
 .posts_more_option_popup button {
   /* margin: auto; */

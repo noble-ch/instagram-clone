@@ -151,7 +151,27 @@
       <section class="lsidebar">
         <div class="header__buttons header__buttons--desktop">
           <div class="header__buttons">
-            <a href="index.html" class="header__home">
+            <a href="index.html" class="header__home ig_logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                aria-label="Instagram"
+                class="x1lliihq x1n2onr6 x5n08af"
+                width="30"
+                height="30"
+                fill="var(--dark_text)"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <title>Instagram</title>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 2.982c2.937 0 3.285.011 4.445.064a6.087 6.087 0 0 1 2.042.379 3.408 3.408 0 0 1 1.265.823 3.408 3.408 0 0 1 .823 1.265 6.087 6.087 0 0 1 .379 2.042c.053 1.16.064 1.508.064 4.445s-.011 3.285-.064 4.445a6.087 6.087 0 0 1-.379 2.042 3.643 3.643 0 0 1-2.088 2.088 6.087 6.087 0 0 1-2.042.379c-1.16.053-1.508.064-4.445.064s-3.285-.011-4.445-.064a6.087 6.087 0 0 1-2.043-.379 3.408 3.408 0 0 1-1.264-.823 3.408 3.408 0 0 1-.823-1.265 6.087 6.087 0 0 1-.379-2.042c-.053-1.16-.064-1.508-.064-4.445s.011-3.285.064-4.445a6.087 6.087 0 0 1 .379-2.042 3.408 3.408 0 0 1 .823-1.265 3.408 3.408 0 0 1 1.265-.823 6.087 6.087 0 0 1 2.042-.379c1.16-.053 1.508-.064 4.445-.064M12 1c-2.987 0-3.362.013-4.535.066a8.074 8.074 0 0 0-2.67.511 5.392 5.392 0 0 0-1.949 1.27 5.392 5.392 0 0 0-1.269 1.948 8.074 8.074 0 0 0-.51 2.67C1.012 8.638 1 9.013 1 12s.013 3.362.066 4.535a8.074 8.074 0 0 0 .511 2.67 5.392 5.392 0 0 0 1.27 1.949 5.392 5.392 0 0 0 1.948 1.269 8.074 8.074 0 0 0 2.67.51C8.638 22.988 9.013 23 12 23s3.362-.013 4.535-.066a8.074 8.074 0 0 0 2.67-.511 5.625 5.625 0 0 0 3.218-3.218 8.074 8.074 0 0 0 .51-2.67C22.988 15.362 23 14.987 23 12s-.013-3.362-.066-4.535a8.074 8.074 0 0 0-.511-2.67 5.392 5.392 0 0 0-1.27-1.949 5.392 5.392 0 0 0-1.948-1.269 8.074 8.074 0 0 0-2.67-.51C15.362 1.012 14.987 1 12 1Zm0 5.351A5.649 5.649 0 1 0 17.649 12 5.649 5.649 0 0 0 12 6.351Zm0 9.316A3.667 3.667 0 1 1 15.667 12 3.667 3.667 0 0 1 12 15.667Zm5.872-10.859a1.32 1.32 0 1 0 1.32 1.32 1.32 1.32 0 0 0-1.32-1.32Z"
+                  fill="var(--text-dark)"
+                />
+              </svg>
+            </a>
+            <a href="index.html" class="header__home ig_name">
               <svg
                 width="104"
                 height="30"
@@ -711,6 +731,7 @@
                       class="x1lliihq x1n2onr6 xxk16z8"
                       stroke="var(--text-dark)"
                       stroke-width="5"
+                      fill="var(--primary)"
                       width="20"
                       height="20"
                       viewBox="0 0 50 56"
@@ -720,43 +741,6 @@
                         d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"
                       />
                     </svg>
-                    <script>
-                      const likeBtn = document.querySelector('.like_button');
-
-                      likeBtn.addEventListener('click', () => {
-                        const currentFillColor = likeBtn.getAttribute('fill');
-                        const currentStrokeColor =
-                          likeBtn.getAttribute('stroke');
-
-                        if (currentFillColor === 'red') {
-                          likeBtn.removeAttribute('fill');
-                          likeBtn.setAttribute('stroke', 'var(--text-dark)');
-                        } else {
-                          likeBtn.setAttribute('fill', 'red');
-                          likeBtn.setAttribute('stroke', 'red');
-                          likeBtn.classList.add('animate');
-                          setTimeout(() => {
-                            likeBtn.classList.remove('animate');
-                          }, 500);
-                        }
-                      });
-                    </script>
-                    <style>
-                      @keyframes beat {
-                        0% {
-                          transform: scale(0.8);
-                        }
-                        50% {
-                          transform: scale(1.3);
-                        }
-                        100% {
-                          transform: scale(1);
-                        }
-                      }
-                      .like_button.animate {
-                        animation: beat 500ms ease-in-out;
-                      }
-                    </style>
                   </button>
                   <button class="post__button">
                     <svg
@@ -824,7 +808,8 @@
                     <span
                       >Liked by
                       <a class="post__name--underline" href="#">user123</a> and
-                      <a href="#">73 others</a></span>
+                      <a href="#">73 others</a></span
+                    >
                   </div>
 
                   <div class="post__description">
@@ -901,17 +886,20 @@
                 <div class="post__buttons">
                   <button class="post__button">
                     <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
+                      class="like_button"
                       xmlns="http://www.w3.org/2000/svg"
+                      aria-label="Unlike"
+                      class="x1lliihq x1n2onr6 xxk16z8"
+                      stroke="var(--text-dark)"
+                      stroke-width="5"
+                      fill="var(--primary)"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 50 56"
                     >
+                      <title>Unlike</title>
                       <path
-                        d="M11.4995 21.2609C11.1062 21.2609 10.7307 21.1362 10.4133 20.9001C8.2588 19.3012 3.10938 15.3239 1.81755 12.9143C0.127895 9.76543 1.14258 5.72131 4.07489 3.89968C5.02253 3.31177 6.09533 3 7.18601 3C8.81755 3 10.3508 3.66808 11.4995 4.85726C12.6483 3.66808 14.1815 3 15.8131 3C16.9038 3 17.9766 3.31177 18.9242 3.89968C21.8565 5.72131 22.8712 9.76543 21.186 12.9143C19.8942 15.3239 14.7448 19.3012 12.5902 20.9001C12.2684 21.1362 11.8929 21.2609 11.4995 21.2609ZM7.18601 4.33616C6.34565 4.33616 5.5187 4.57667 4.78562 5.03096C2.43888 6.49183 1.63428 9.74316 2.99763 12.2819C4.19558 14.5177 9.58639 18.6242 11.209 19.8267C11.3789 19.9514 11.6158 19.9514 11.7856 19.8267C13.4082 18.6197 18.799 14.5133 19.997 12.2819C21.3603 9.74316 20.5557 6.48738 18.209 5.03096C17.4804 4.57667 16.6534 4.33616 15.8131 4.33616C14.3425 4.33616 12.9657 5.04878 12.0359 6.28696L11.4995 7.00848L10.9631 6.28696C10.0334 5.04878 8.6611 4.33616 7.18601 4.33616Z"
-                        fill="var(--text-dark)"
-                        stroke="var(--text-dark)"
-                        stroke-width="0.6"
+                        d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"
                       />
                     </svg>
                   </button>
@@ -1494,5 +1482,41 @@
       }
     </script>
     <script src="/components/suggestion.js"></script>
+    <script>
+      const likeBtn = document.querySelector('.like_button');
+
+      likeBtn.addEventListener('click', () => {
+        const currentFillColor = likeBtn.getAttribute('fill');
+        const currentStrokeColor = likeBtn.getAttribute('stroke');
+
+        if (currentFillColor === 'red') {
+          likeBtn.setAttribute('fill', 'var(--primary)');
+          likeBtn.setAttribute('stroke', 'var(--text-dark)');
+        } else {
+          likeBtn.setAttribute('fill', 'red');
+          likeBtn.setAttribute('stroke', 'red');
+          likeBtn.classList.add('animate');
+          setTimeout(() => {
+            likeBtn.classList.remove('animate');
+          }, 500);
+        }
+      });
+    </script>
+    <style>
+      @keyframes beat {
+        0% {
+          transform: scale(0.8);
+        }
+        50% {
+          transform: scale(1.3);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      .like_button.animate {
+        animation: beat 500ms ease-in-out;
+      }
+    </style>
   </body>
 </html>
