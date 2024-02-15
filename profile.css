@@ -221,3 +221,8 @@
     display: flex !important;
   }
 }
+
+.double_tap_heart {
+  background: var(--heart);
+  
+}

@@ -169,3 +169,44 @@ postsContent.forEach((post) => {
     }
   }
 });
+
+// function for the like buttons to be red
+
+function toggleLikeButton() {
+  const likeBtn = document.querySelector('.like_button');
+
+  likeBtn.addEventListener('click', () => {
+    const currentFillColor = likeBtn.getAttribute('fill');
+    const currentStrokeColor = likeBtn.getAttribute('stroke');
+
+    if (currentFillColor === 'red') {
+      likeBtn.setAttribute('fill', 'var(--primary)');
+      likeBtn.setAttribute('stroke', 'var(--text-dark)');
+    } else {
+      likeBtn.setAttribute('fill', 'red');
+      likeBtn.setAttribute('stroke', 'red');
+      likeBtn.classList.add('animate');
+      setTimeout(() => {
+        likeBtn.classList.remove('animate');
+      }, 500);
+    }
+  });
+}
+toggleLikeButton();
+// function to display heart when double tapped on the img
+function toggleHeartAnimation() {
+  const heart = document.querySelector('.double-tap-heart');
+  const likeBtn = document.querySelector('.like_button');
+
+  heart.classList.add('animate');
+  setTimeout(() => {
+    heart.classList.remove('animate');
+  }, 1000);
+
+  likeBtn.setAttribute('fill', 'red');
+  likeBtn.setAttribute('stroke', 'red');
+  likeBtn.classList.add('animate');
+  setTimeout(() => {
+    likeBtn.classList.remove('animate');
+  }, 500);
+}

@@ -19,6 +19,7 @@ textarea {
 
 /* Vars */
 :root {
+  --heart: linear-gradient(40deg, red, rgb(140, 0, 255));
   --primary: hsl(0, 0%, 100%);
   --secondary: hsl(0, 0%, 90%);
   --tertiary: hsl(0, 0%, 80%);
@@ -875,6 +876,29 @@ p {
 b {
   color: var(--text-dark);
 }
+
+@keyframes tap {
+  0% {
+    transform: scale(0) rotateZ(20deg);
+  }
+  100% {
+    transform: scale(1);
+    display: none;
+  }
+}
+.double-tap-heart.animate {
+  position: absolute;
+  animation: tap 500ms ease-in-out;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+}
+.double-tap-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Media Queries */
 
 /* ------------------mobile phones------------------ */
