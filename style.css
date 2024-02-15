@@ -103,7 +103,6 @@ img {
 
   width: 100%;
   height: 1px;
-  background-color: var(--border);
 }
 
 .header__content {
@@ -890,8 +889,6 @@ b {
   position: absolute;
   animation: tap 500ms ease-in-out;
   margin: auto;
-  top: 50%;
-  left: 50%;
 }
 .double-tap-container {
   display: flex;
@@ -915,11 +912,24 @@ b {
     width: 80% !important;
     height: 60% !important;
   }
-  .ig_name {
-    display: none;
-  }
+
   .ig_logo {
     margin-left: 16px;
+  }
+  .ig_name {
+    margin-left: 0 !important;
+  }
+  .header__buttons--mobile {
+    width: 100%;
+    display: flex !important;
+    justify-content: space-between !important;
+    border-bottom: none !important;
+  }
+  .header-ig-contaier {
+    display: flex;
+  }
+  .header__theme-button {
+    margin-left: 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 1280px) {
