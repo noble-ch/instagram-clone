@@ -654,8 +654,14 @@
               </svg>
             </button>
             <div id="story_container" class="stories__content">
-              <button class="story story--has-story">
+              <button
+                class="story story--has-story_usr1"
+                onclick="toggleStory()"
+              >
                 <div class="story__avatar">
+                  <div class="spin-container hidden">
+                    <div class="spinner"></div>
+                  </div>
                   <div class="story__border">
                     <svg
                       width="64"
@@ -670,6 +676,7 @@
                           y1="1"
                           x1="0"
                           id="--story-gradient"
+                          class="first-story"
                         >
                           <stop offset="0" stop-color="#f09433" />
                           <stop offset="0.25" stop-color="#e6683c" />
@@ -812,12 +819,15 @@
                   </div>
                 </dialog>
                 <script>
+                  let Body = document.querySelector('body');
                   var dialog = document.querySelector('dialog');
                   document.querySelector('#show').onclick = function () {
                     dialog.show();
+                    Body.style.overflow = 'hidden';
                   };
                   document.querySelector('#close').onclick = function () {
                     dialog.close();
+                    Body.style.overflow = 'auto';
                   };
                 </script>
               </div>
@@ -848,10 +858,13 @@
                       x2="100%"
                       y2="50%"
                     >
-                      <stop offset="0%" style="stop-color: rgb(255, 0, 13)" />
+                      <stop
+                        offset="0%"
+                        style="stop-color: rgb(255, 255, 255)"
+                      />
                       <stop
                         offset="100%"
-                        style="stop-color: rgb(153, 0, 255)"
+                        style="stop-color: rgb(255, 255, 255)"
                       />
                     </linearGradient>
                   </defs>

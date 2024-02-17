@@ -210,3 +210,14 @@ function toggleHeartAnimation() {
     likeBtn.classList.remove('animate');
   }, 500);
 }
+
+function toggleStory() {
+  var border = document.querySelector('.story--has-story_usr1 .story__border');
+  var spinnerContainer = document.querySelector('.spin-container');
+
+  // Toggle the stroke class for the story border
+  border.classList.toggle('with-stroke');
+
+  // Hide the spinner container
+  spinnerContainer.classList.toggle('hidden');
+}

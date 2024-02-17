@@ -151,6 +151,7 @@
   display: none !important;
 }
 
+
 /* ************screen size*********** */
 @media (max-width: 767px) {
   .username-container {
@@ -224,5 +225,4 @@
 
 .double_tap_heart {
   background: var(--heart);
-  
 }
