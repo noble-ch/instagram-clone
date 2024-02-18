@@ -1223,6 +1223,6 @@ b {
 }
 .spinner_container {
   /* border: solid red; */
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   background: var(--primary);
 }

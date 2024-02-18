@@ -80,7 +80,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 1px;
+  height: 1.5px;
   width: 100%;
   background: #f47;
   /* background: linear-gradient(45deg, #f47, rgb(255, 96, 68), rgb(255, 152, 68)); */
