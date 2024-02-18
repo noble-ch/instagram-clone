@@ -1213,12 +1213,16 @@ b {
     transform: scale(1);
   }
 }
-.bg-red {
+.bg-tr {
   background: var(--primary);
   /* margin-bottom: -10px; */
 }
 .story__user1 {
   position: absolute;
-
   margin-top: 65px !important;
+}
+.spinner_container {
+  /* border: solid red; */
+  margin-bottom: 5px;
+  background: var(--primary);
 }
