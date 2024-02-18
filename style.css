@@ -95,6 +95,7 @@ img {
   top: 0;
   left: 0;
   z-index: 2;
+  transition: 0.5s;
 }
 .header::after {
   content: '';
@@ -240,6 +241,7 @@ img {
   display: flex;
   justify-self: center;
   padding-top: 0 !important;
+
   /* margin-left: 25rem; */
 }
 .content {
@@ -492,16 +494,19 @@ img {
 .post__buttons {
   display: flex;
   position: relative;
+  transition: 0s !important;
 }
 .post__button {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  transition: 0s !important;
 
   padding: 8px;
 }
 .post__button--align-right {
   margin-left: auto;
+  transition: 0s !important;
 }
 .post__indicators {
   display: flex;
@@ -1150,6 +1155,13 @@ b {
     width: 30% !important;
     height: 60% !important;
   }
+  .content-container {
+    margin-left: 360px !important;
+    margin-top: 8px;
+  }
+  .posts {
+    margin-left: 20px;
+  }
 }
 
 /* ---------------big screens------------ */
@@ -1213,6 +1225,7 @@ b {
     transform: scale(1);
   }
 }
+
 .bg-tr {
   background: var(--primary);
   /* margin-bottom: -10px; */

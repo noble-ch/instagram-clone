@@ -4,6 +4,9 @@
   box-sizing: border-box;
   transition: 0.5s;
 }
+  .no-transition {
+    transition: 0s !important;
+  }
 .box {
   position: absolute;
   top: 50%;
@@ -80,7 +83,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 1.5px;
+  height: 1px;
   width: 100%;
   background: #f47;
   /* background: linear-gradient(45deg, #f47, rgb(255, 96, 68), rgb(255, 152, 68)); */
@@ -104,4 +107,8 @@
     height: 1.5px;
     border-radius: 300px;
   }
+}
+
+.td {
+  color: var(--text-dark);
 }

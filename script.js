@@ -11,6 +11,7 @@ const postsContent = document.querySelectorAll('.post__content');
 // Set initial theme from LocalStorage
 document.onload = setInitialTheme(localStorage.getItem('theme'));
 function setInitialTheme(themeKey) {
+  document.documentElement.style.transition = 'background-color 0.5s ease';
   if (themeKey === 'dark') {
     document.documentElement.classList.add('darkTheme');
   } else {
@@ -197,6 +198,7 @@ toggleLikeButton();
 function toggleHeartAnimation() {
   const heart = document.querySelector('.double-tap-heart');
   const likeBtn = document.querySelector('.like_button');
+  const noTransition = document.querySelector('.no-transition');
 
   heart.classList.add('animate');
   setTimeout(() => {
