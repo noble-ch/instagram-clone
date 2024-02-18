@@ -957,7 +957,6 @@ b {
   border-bottom: 3px dotted #ff7300;
   border-left: 2px dashed #d4664b;
   border-radius: 50%;
-
   animation: spin 6s linear infinite;
 }
 
@@ -987,6 +986,7 @@ b {
 /* Media Queries */
 
 /* ------------------mobile phones------------------ */
+
 @media (max-width: 767px) {
   .header__buttons--desktop {
     display: none;
@@ -1038,6 +1038,7 @@ b {
   }
 }
 /* -----------------ipad Air---------------- */
+
 @media (min-width: 620px) {
   .content-container {
     padding: 30px 0 24px;
@@ -1211,4 +1212,13 @@ b {
   100% {
     transform: scale(1);
   }
+}
+.bg-red {
+  background: var(--primary);
+  /* margin-bottom: -10px; */
+}
+.story__user1 {
+  position: absolute;
+
+  margin-top: 65px !important;
 }
