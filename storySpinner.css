@@ -4,9 +4,9 @@
   box-sizing: border-box;
   /* transition: 0.5s; */
 }
-  .no-transition {
-    transition: 0s !important;
-  }
+.no-transition {
+  transition: 0s !important;
+}
 .box {
   position: absolute;
   top: 50%;
@@ -16,6 +16,7 @@
   width: 64px;
   border-radius: 50%;
   border: 0.5px solid #ff0095;
+
   margin-top: -8px;
 }
 .chckbx {
@@ -86,7 +87,7 @@
   height: 1px;
   width: 100%;
   background: #f47;
-  /* background: linear-gradient(45deg, #f47, rgb(255, 96, 68), rgb(255, 152, 68)); */
+  /* background: linear-gradient(45deg, #f47, rgb(255, 96, 68), rgb(255, 68, 186)); */
 }
 
 @keyframes igl {

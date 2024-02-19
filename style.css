@@ -312,6 +312,8 @@ img {
   top: 45%;
   transform: translateY(-50%);
   z-index: 1;
+  margin-top: -5px;
+  /* margin-right: 8px; */
 }
 .stories__left-button {
   left: 35px;
@@ -1085,6 +1087,10 @@ b {
   .ig_logo {
     display: block !important;
     margin-left: 16px !important;
+  }
+  .stories {
+    width: 640px !important;
+    margin-left: -16px !important;
   }
 }
 /* --------------------tablets---------------------------  */

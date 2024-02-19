@@ -52,7 +52,7 @@
 }
 
 .username-container button {
-  width: 110px;
+  width: 95px;
   height: 35px;
   border-radius: 10px;
   background-color: var(--tertiary);
@@ -62,7 +62,7 @@
   border: none;
 }
 .username-container button:hover {
-  width: 110px;
+  width: 95px;
   height: 35px;
   border-radius: 10px;
   background-color: var(--secondary);
@@ -250,7 +250,7 @@
   }
 
   .username-container button {
-    width: 100px;
+    width: 95px;
     margin: 0 5px 0 0;
   }
   .posts-container {
