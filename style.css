@@ -1134,6 +1134,10 @@ b {
     display: block !important;
     margin-left: 16px !important;
   }
+  .content-container {
+    /* border: solid red; */
+    margin: 16px auto;
+  }
 }
 
 /* ----------------compact side_bar-------------------- */
